@@ -15,7 +15,7 @@ const createTable = () =>{
         <th>Balance</th>
         <th>FirstName</th>
         <th>LastName</th>
-        <th>Active</th>
+        <th>isActive</th>
         <th>Actions</th>
     </tr>        
     `;
@@ -49,15 +49,15 @@ export const renderTable = ( element ) => {
     users.forEach ( user => {
         tableHtml += `
             <tr>
-                 <td>${user.id }</td>
-                 <td>${user.Balance }</td>
-                 <td>${user.FirstName}</td>
-                 <td>${user.LastName}</td>
-                 <td>${user. Active}</td>
+                 <td>${ user.id }</td>
+                 <td>${ user.balance }</td>
+                 <td>${ user.firstName}</td>
+                 <td>${ user.lastName}</td>
+                 <td>${ user.isActive}</td>
                  <td>
-                    <a href= "#/"data-id=" ${user.id }"> Select </a>
+                    <a href= "#/"data-id=" ${ user.id }"> Select </a>
                     |
-                    <a href= "#/"data-id=" ${user.id }"> Delete </a>
+                    <a href= "#/"data-id=" ${ user.id }"> Delete </a>
                 </td>
              </tr>
         `

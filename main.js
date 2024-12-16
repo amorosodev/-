@@ -25,5 +25,3 @@ const element = document.querySelector('.card');
 
 UserApp (element)
 
-
-console.log (renderTable)
